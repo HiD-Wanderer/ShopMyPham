@@ -1,0 +1,43 @@
+RewriteEngine On
+RewriteRule ^(.*) - [E=BASE:%1]
+RewriteRule ^index.php ./san_pham.php?key=index
+RewriteRule ^tin-tuc/ct/([a-z0-9_-]+).html ./tin_tuc.php?key=ct-tin-tuc&id=$1
+RewriteRule ^tin-tuc/danh-sach-tin-tuc.html ./tin_tuc.php?key=danh-sach-tin-tuc
+RewriteRule ^san-pham/san-pham-khuyen-mai.html ./san_pham.php?key=ds-san-pham-km
+RewriteRule ^san-pham/ct/([a-z0-9_-]+).html ./san_pham.php?key=ct-san-pham&id=$1
+RewriteRule ^san-pham/danh-sach-san-pham/([0-9_-]+) ./san_pham.php?key=danh-sach-san-pham&page=$1
+RewriteRule ^san-pham/danh-sach-san-pham$ ./san_pham.php?key=danh-sach-san-pham
+RewriteRule ^san-pham/([a-z0-9_-]+).html ./san_pham.php?key=ds-san-pham-loai-cha&id=$1
+RewriteRule ^don-dat-hang/so-don-dat-hang.html ./khach_hang.php?key=don-hang-moi
+RewriteRule ^khach-hang/them-san-pham.html ./khach_hang.php?key=them-mat-hang
+RewriteRule ^khach-hang/them-bo-suu-tap.html ./khach_hang.php?key=them-bo-suu-tap
+RewriteRule ^khach-hang/thong-tin-gio-hang.html ./khach_hang.php?key=thong-tin-gio-hang
+RewriteRule ^khach-hang/huy-gio-hang.html ./khach_hang.php?key=huy-gio-hang
+RewriteRule ^khach-hang/dat-hang.html ./khach_hang.php?key=dat-hang
+RewriteRule ^khach-hang/dang-ky.html ./khach_hang.php?key=khach-hang-dang-ky
+RewriteRule ^khach-hang/thong-tin-don-dat-hang/([0-9]+) ./khach_hang.php?key=thong-tin-don-dat-hang&id=$1
+RewriteRule ^quan-tri/nguoi-dung/dang-nhap.html ./nguoi_dung.php?key=dang-nhap
+RewriteRule ^quan-tri.html ./nguoi_dung.php?key=quan-tri
+RewriteRule ^quan-tri/nguoi-dung/dang-xuat.html ./nguoi_dung.php?key=dang-xuat
+RewriteRule ^quan-tri/nguoi-dung/lock-screen.html ./nguoi_dung.php?key=lock-screen
+RewriteRule ^quan-tri/nguoi-dung/profile.html ./nguoi_dung.php?key=profile
+RewriteRule ^quan-tri/san-pham/danh-sach-san-pham.html$ ./san_pham.php?key=ds-san-pham-admin
+RewriteRule ^quan-tri/san-pham/danh-sach-san-pham/([0-9_-]+) ./san_pham.php?key=ds-san-pham-admin&page=$1
+RewriteRule ^quan-tri/san-pham/them-san-pham.html ./san_pham.php?key=them-san-pham
+RewriteRule ^quan-tri/san-pham/cap-nhat-san-pham/([0-9_-]+) ./san_pham.php?key=cap-nhat-san-pham&id=$1
+RewriteRule ^quan-tri/san-pham/xoa-san-pham/([0-9_-]+) ./san_pham.php?key=xoa-san-pham&id=$1
+RewriteRule ^quan-tri/nguoi-dung/danh-sach-nguoi-dung.html ./nguoi_dung.php?key=ds-nguoi-dung
+RewriteRule ^quan-tri/nguoi-dung/cap-nhat-nguoi-dung/([0-9_-]+) ./nguoi_dung.php?key=cap-nhat-nguoi-dung&id=$1
+RewriteRule ^quan-tri/don-hang/danh-sach-don-hang.html$ ./don_hang.php?key=ds-don-hang
+RewriteRule ^quan-tri/nguoi-dung/them-nguoi-dung.html ./nguoi_dung.php?key=them-nguoi-dung
+RewriteRule ^quan-tri/nguoi-dung/xoa-nguoi-dung/([0-9_-]+) ./nguoi_dung.php?key=xoa-nguoi-dung&id=$1
+RewriteRule ^quan-tri/don-hang/xoa-don-hang/([0-9_-]+) ./don_hang.php?key=xoa-don-hang&id=$1
+RewriteRule ^quan-tri/don-hang/cap-nhat-don-hang/([0-9_-]+) ./don_hang.php?key=cap-nhat-don-hang&id=$1
+RewriteRule ^quan-tri/don-hang/danh-sach-chi-tiet.html ./don_hang.php?key=ds-chi-tiet
+RewriteRule ^quan-tri/san-pham-ban-chay.html ./san_pham.php?key=san-pham-ban-chay
+RewriteRule ^quan-tri/thong-ke-doanh-thu.html ./don_hang.php?key=thong-ke
+RewriteRule ^quan-tri/tin-tuc/danh-sach-tin-tuc.html ./tin_tuc.php?key=ds-tin-tuc
+RewriteRule ^quan-tri/tin-tuc/them-tin-tuc.html ./tin_tuc.php?key=them-tin-tuc
+RewriteRule ^quan-tri/tin-tuc/xoa-tin-tuc/([0-9_-]+) ./tin_tuc.php?key=xoa-tin-tuc&id=$1
+RewriteRule ^quan-tri/tin-tuc/cap-nhat-tin-tuc/([0-9_-]+) ./tin_tuc.php?key=cap-nhat-tin-tuc&id=$1
+

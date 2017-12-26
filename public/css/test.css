@@ -1,0 +1,15 @@
+.contents_main 
+{
+	font-size: 12px;
+	text-decoration: none solid rgb(51, 51 ,51);
+	word-spacing : 0px;
+	background-color: #FFFFFF;
+	background- : 0% 0%;
+	position: relative;
+	display: block;
+	transform: none;
+	transition: all 0s ease 0s;
+	outline: rgb(255, 0, 0);
+	list-style-type: none;
+	list-style-position: outside;
+}
